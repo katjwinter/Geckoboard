@@ -13,7 +13,7 @@ import pymongo
 # insert that information into a Geckoboard dataset using the Geckoboard API.
 def main():
     # Connect to database
-    client = pymongo.MongoClient('mongodb://admin:z3nd3sK@ds055626.mlab.com:55626/zendesk')
+    client = pymongo.MongoClient('mongodb://admin:XXXXX@ds055626.mlab.com:55626/zendesk')
     db = client.get_default_database()
 
     # Get tickets collection
@@ -40,7 +40,7 @@ def main():
             }
         },
         "unique_by": ["ticket_id"]
-    }, auth=("e829f81533363e904abfa967c0d2ddb6",""))
+    }, auth=("XXXXX",""))
 
     # Insert each ticket from the database collection into the Geckoboard dataset
     # using the Geckoboard API.
@@ -59,7 +59,7 @@ def main():
                 "solved": solved,
                 "time": time
             }]
-        }, auth=("e829f81533363e904abfa967c0d2ddb6",""))
+        }, auth=("XXXXX",""))
 
     client.close()
 
