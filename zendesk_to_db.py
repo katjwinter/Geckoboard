@@ -22,10 +22,10 @@ from datetime import timedelta
 # exceptions that each function may throw.
 def main():
     # API URL for search (takes additional parameters created below)
-    urlBase = "https://ninite.zendesk.com/api/v2/search.json?"
+    urlBase = "https://XXXXX.zendesk.com/api/v2/search.json?"
     # Login info for Zendesk API
-    user = "kat@ninite.com" + "/token"
-    pwd = "sSq9JaQ4FJEwv4gPzqAEUFxYCknT04MnA8hkq8Sd"
+    user = "kat@XXXXX.com" + "/token"
+    pwd = "XXXXX"
 
     # I'll be using these more than once, so I'm saving them as variables
     # to avoid the traagedy of a typo later on.
@@ -57,7 +57,7 @@ def main():
     data = response.json()
 
     # Connect to database
-    client = pymongo.MongoClient('mongodb://admin:z3nd3sK@ds055626.mlab.com:55626/zendesk')
+    client = pymongo.MongoClient('mongodb://admin:XXXXX@ds055626.mlab.com:55626/zendesk')
     db = client.get_default_database()
 
     # Get tickets collection
