@@ -27,6 +27,7 @@ There is a lot of room for improvement, including but surely not limited to:
 
 Privacy/Security: This is just GitHub specific and not relevant to code itself, but I'll need to blank out my ZenDesk token so that 
 no one can use it to create tickets in my name or anything. I'll also want to do the same with my database credentials.
+
 *I realize that changing this on github doesn't hide anything, but I mean for the purposes for code distribution. The zendesk token I originally posted has been changed on the zendesk side, and the admin credentials changed on the mongo database. Realized I should clarify that, considering we're talking about privacy and security!
 
 Rigidity: I'm currently just grabbing a very select bit of ticket information to store in the database, but it would be more useful to
